@@ -13,7 +13,7 @@ public class OrangeHRM {
 	public void Ologinpage() throws IOException{
 	
 		for(User user:ExcelUtil.getUserList()){
-			
+			System.out.println();
 			WebDriver driver = new FirefoxDriver();
 			driver.get("http://opensource.demo.orangehrm.com/");
 		driver.findElement(By.id("txtUsername")).sendKeys(user.getUserName());
